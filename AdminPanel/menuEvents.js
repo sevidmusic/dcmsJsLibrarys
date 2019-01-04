@@ -28,3 +28,17 @@ function addToggleOffListener(id, event) {// @todo split into two methods, addTo
 
 addToggleOnListener('admin-panel-show-all-link', 'click');
 addToggleOffListener('admin-panel-hide-all-link', 'click');
+
+function showAppPanel(appName) {
+    var element = document.getElementById(appName);
+    element.style.display = "block";
+    element.style.zIndex = "9999";
+}
+
+function hideAppPanel(appName) {
+    var element = document.getElementById(appName);
+    element.style.display = "none";
+    element.style.zIndex = "0";
+}
+
+//showAppPanel('PHPMyAdminFrame');

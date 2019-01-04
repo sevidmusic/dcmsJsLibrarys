@@ -1,9 +1,9 @@
 function AMShowMessages() {
-    document.getElementById('amMsgContainer').style.display = 'block';
+    document.getElementById('am-message-container').style.display = 'block';
 }
 
 function AMHideMessages() {
-    document.getElementById('amMsgContainer').style.display = 'none';
+    document.getElementById('am-message-container').style.display = 'none';
 }
 
 // hide initially

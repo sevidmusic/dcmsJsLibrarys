@@ -1,9 +1,9 @@
 /**
- * This library will target any elements assigned the class "makeDraggable" and will make them draggable
+ * This library will target any elements assigned the class "dcms-make-draggable" and will make them draggable
  * if possible.
  */
 
-var elements = document.getElementsByClassName('makeDraggable');
+var elements = document.getElementsByClassName('dcms-make-draggable');
 var i = 0;
 for (i = 0; i < elements.length; i++) {
     var element = elements[i];
@@ -87,7 +87,7 @@ function makeFocusable(element) {
     }
 
     function resetAll() {
-        var elements = document.getElementsByClassName('makeDraggable');
+        var elements = document.getElementsByClassName('dcms-make-draggable');
         var i = 0;
         for (i = 0; i < elements.length; i++) {
             var element = elements[i];

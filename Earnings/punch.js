@@ -8,7 +8,7 @@ function earningsPunch() {
     }
     xmlhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
-            document.getElementById("punchDisplay").innerHTML = this.responseText; // @todo: Should use earningsMsg
+            document.getElementById("Earnings").innerHTML = this.responseText; // @todo: Should use earningsMsg
         }
     };
     xmlhttp.open("GET", "apps/Earnings/ajax/punch.php", true);
