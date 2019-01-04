@@ -11,6 +11,7 @@ function toggleDivsOnByClass(className) {
     var elements = document.getElementsByClassName(className);
     for (var i = 0; i < elements.length; i++) {
         elements[i].style.display = "block";
+        elements[i].style.border = "none";
     }
 }
 
@@ -30,6 +31,9 @@ addToggleOnListener('admin-panel-show-all-link', 'click');
 addToggleOffListener('admin-panel-hide-all-link', 'click');
 
 function showAppPanel(appName) {
+    // hide others
+    toggleDivsOffByClass('dcms-admin-panel');
+    // show requested
     var element = document.getElementById(appName);
     element.style.display = "block";
     element.style.zIndex = "9999";
