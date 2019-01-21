@@ -84,3 +84,12 @@ function AjaxFunctionCall(functionName, context, args) {
 function testAjaxFunctionCall(arg1, arg2) {
     console.log('Ajax Router Request callFunction parameter is working. Arguments: ' + arg1 + ' | ' + arg2);
 }
+
+/**
+ * Get the value of a specified element.
+ * @param elementId The id of the element whose value should be returned.
+ * @returns {string}
+ */
+function getElementValue(elementId) {
+    return document.getElementById(elementId).value;
+}
