@@ -11,7 +11,7 @@ function toggleDivsOnByClass(className) {
     var elements = document.getElementsByClassName(className);
     for (var i = 0; i < elements.length; i++) {
         elements[i].style.display = "block";
-        elements[i].style.border = "none";
+        element.style.position="absolute";
     }
 }
 
@@ -37,12 +37,19 @@ function showAppPanel(appName) {
     var element = document.getElementById(appName);
     element.style.display = "block";
     element.style.zIndex = "9999";
+    element.style.width = "98%";
+    element.style.height="72%";
+    element.style.position="fixed";
+    element.style.top="27px";
+    element.style.left="10px";
+    //element.style.="";
 }
 
 function hideAppPanel(appName) {
     var element = document.getElementById(appName);
     element.style.display = "none";
     element.style.zIndex = "0";
+    element.style.position="absolute";
 }
 
 //showAppPanel('PHPMyAdminFrame');
