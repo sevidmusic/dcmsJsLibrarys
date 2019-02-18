@@ -93,3 +93,12 @@ function testAjaxFunctionCall(arg1, arg2) {
 function getElementValue(elementId) {
     return document.getElementById(elementId).value;
 }
+
+/**
+ * Determines if the specified checkbox is checked.
+ * @param checkboxElementId The id of the checkbox element.
+ * @returns {boolean}
+ */
+function checkboxIsChecked(checkboxElementId) {
+    return document.getElementById(checkboxElementId).checked;
+}

@@ -11,6 +11,9 @@ function earningsPunch() {
             document.getElementById("Earnings").innerHTML = this.responseText; // @todo: Should use earningsMsg
         }
     };
-    xmlhttp.open("GET", "apps/Earnings/ajax/punch.php", true);
-    xmlhttp.send();
+    var params = 'ajaxRequest=true';
+    contentType = "application/x-www-form-urlencoded";
+    xmlhttp.open("POST", "apps/Earnings/ajax/punch.php", true);
+    xmlhttp.setRequestHeader("Content-type", contentType);
+    xmlhttp.send(params);
 }
