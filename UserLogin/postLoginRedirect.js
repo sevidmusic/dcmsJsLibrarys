@@ -1,6 +1,6 @@
-if (loginUser) {
-    console.log(loginUser); // set to 1 minute while in dev
-    dcmsRedirect(redirectUrl,2000);
+// @todo refactor into 2 separate libraries : dcmsJsRedirect and dcmsGetInterface
+if (redirectUser) {
+    dcmsRedirect(redirectUrl, 500); // redirect after .5 seconds
 
     /**
      * Redirect on user to specified url after x seconds.
@@ -33,7 +33,7 @@ if (loginUser) {
      * From answer on https://stackoverflow.com/
      * @see https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
      */
-    function getParameterByName(name, url) {
+    function retrieveGetValue(name, url) {
         if (!url) url = window.location.href;
         name = name.replace(/[\[\]]/g, '\\$&');
         var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
