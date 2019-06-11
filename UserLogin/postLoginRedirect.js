@@ -1,4 +1,3 @@
-// @todo refactor into 2 separate libraries : dcmsJsRedirect and dcmsGetInterface
 if (redirectUser) {
     dcmsRedirect(redirectUrl, 500); // redirect after .5 seconds
 
